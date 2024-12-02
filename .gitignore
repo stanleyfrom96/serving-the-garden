@@ -1,40 +1,50 @@
-# Ignore content folder (optional, if users will upload content)
-content/
+# System files
+# ------------
 
-# Ignore the Kirby license file (sensitive information)
-site/config/.license
-
-# Ignore panel sessions
-site/sessions/
-
-# Ignore cache files
-cache/
-assets/cache/
-
-# Ignore log files
-logs/
-
-# Ignore environment-specific config files
-.env
-*.env
-
-# Ignore temporary files
-*.swp
-*.swo
+Icon
 .DS_Store
-Thumbs.db
 
-# Ignore node_modules if using npm/yarn for frontend development
-node_modules/
+# Temporary files
+# ---------------
 
-# Ignore Composer dependencies (if installed locally)
-vendor/
+/media/*
+!/media/index.html
 
-# Ignore backup or temp files created by editors
-*.bak
-*.tmp
-*.orig
+# Lock files
+# ---------------
 
-# Ignore user-specific or system-specific files
-.idea/
-.vscode/
+.lock
+
+# Editors
+# (sensitive workspace files)
+# ---------------------------
+*.sublime-workspace
+/.vscode
+/.idea
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+/site/cache/*
+!/site/cache/index.html
+
+# Accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Sessions
+# ---------------
+
+/site/sessions/*
+!/site/sessions/index.html
+
+# License
+# ---------------
+
+/site/config/.license

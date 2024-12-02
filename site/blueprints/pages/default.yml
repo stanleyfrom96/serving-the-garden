@@ -1,4 +1,4 @@
-title: Default
+title: Default Page
 
 columns:
   main:
@@ -12,13 +12,22 @@ columns:
             fieldsets:
               - heading
               - text
-              - accordion
               - image
               - list
               - gallery
-              - button
-              - spacer
-              - video
+            layouts:
+              - "1/1"
+              - "1/2, 1/2"
+              - "1/3, 2/3"
+              - "1/4, 1/4, 1/4, 1/4"
+              - "1/1, 1/3, 2/3"
+              - "1/1, 2/3, 1/3"
+              - "1/2, 1/2, 1/3, 1/3, 1/3"
+              - "1/1, 1/4, 1/4, 1/4, 1/4"
+              - "1/1, 1/2, 1/2"
+              - "1/1, 1/3, 1/3, 1/3"
+              - "1/1, 1/1, 1/4, 1/4, 1/4, 1/4"
+              - "1/1, 1/2, 1/2, 1/4, 1/4, 1/4, 1/4"
             settings:
               fields:
                 class:
@@ -27,9 +36,6 @@ columns:
                 id:
                   type: text
                   width: 1/2
-                image:
-                  label: Background image
-                  type: files
   sidebar:
     width: 1/3
     sections:
