@@ -1,3 +1,194 @@
 body {
-  font-family: "Courier", Courier, monospace;
+  /*  font-family: courier;*/
+  font-family: serif;
+  font-weight:100;
+    font-size: 25px;
+    gap: 0px;
+   background-color: #fff;
+   /* background-image: url(img/5.png);*/
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    color:#706f6f;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*text*/
+h1{
+font-family: sans-serif;
+   font-size: 45px;
+   padding:0;
+   padding-bottom:0px;
+   margin:0;
+   font-weight: bold;
+   letter-spacing: -2;
+   color:#8f9090;
+   background:none;
+   vertical-align: text-top;
+   width:100%;
+
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+  /*  border-bottom: 1px dotted currentColor;*/
+    display: inline-block;
+    padding:0;
+    margin:0;
+    margin-bottom:20px;
+
+}
+
+hr {
+    border: none;
+    border-top: 2px dotted #706f6f;
+    background-color: none;
+    height: 1px;
+    width: 100%;
+    margin:0;
+    padding:0;
+  }
+
+p{
+display: inline-block;
+padding:0;
+margin:0;
+margin-bottom:25px;
+}
+
+a{
+color:deeppink;
+text-decoration: none;
+border-bottom: 1px dotted currentColor;
+
+
+}
+
+span{  
+background:none;
+}
+.dialogue{
+margin-left:20px;  
+}
+
+.lightgrey{
+  color:black;
+}
+.pink{
+color:deeppink;
+}
+.blue{
+color:blue;
+}
+.red{
+  color:orangered;
+  }
+  .violet{
+    color:#450082;
+    }
+    .green{
+      color:#cbe000;
+      }
+      .lightblue{
+        color:#00cfff;
+        }
+
+/*content*/
+main{
+    margin: 0px;
+    background-color: none;
+
+    
+}
+
+.content{
+
+    margin: auto;
+    margin-top:150px;
+    background:none;
+    width:60%;
+    display:block;
+
+}
+
+header{
+position: fixed;
+width:60%;
+margin: auto;
+background:none;
+height: auto;
+top:20px;
+justify-content: center; 
+/*display: inline-block;*/
+left: 50%;
+transform: translate(-50%, 0);
+text-align: center;
+mix-blend-mode: difference;
+moz-mix-blend-mode: difference;
+webkit-mix-blend-mode: difference;
+o-mix-blend-mode: difference;
+
+}
+.icons{
+position: fixed;
+margin:0;
+right: 20px;;
+top:20px;
+width:100px;
+}
+
+img{
+}
+.seed{
+  width:70px;
+}
+.img{
+  margin:0;
+  padding:0;
+
+}
+
+.illustrations{
+  margin:auto;
+  left:0;
+  position:relative;
+  display:block;
+  width:200px;
+}
+@media screen and (max-width:900px){
+  body {
+      font-size: 20px;
+  }
+  .seed{
+    width:55px;
+  }
+  .content{
+    width:auto;
+    margin: 25px;
+    margin-top:150px;
+    background:none;
+
+}
+h1{
+     font-size: 31px;
+  
+  }
+
+  h2{
+
+    font-size: 18px;
+    width:100%
+
+
+
+}
+
+header{
+  width:100%;
+}
+.illustrations{
+
+  width:150px;
 }
