@@ -1,3 +1,40 @@
-.DS_Store
+# Ignore content folder (optional, if users will upload content)
+content/
 
-/images/*
+# Ignore the Kirby license file (sensitive information)
+site/config/.license
+
+# Ignore panel sessions
+site/sessions/
+
+# Ignore cache files
+cache/
+assets/cache/
+
+# Ignore log files
+logs/
+
+# Ignore environment-specific config files
+.env
+*.env
+
+# Ignore temporary files
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules if using npm/yarn for frontend development
+node_modules/
+
+# Ignore Composer dependencies (if installed locally)
+vendor/
+
+# Ignore backup or temp files created by editors
+*.bak
+*.tmp
+*.orig
+
+# Ignore user-specific or system-specific files
+.idea/
+.vscode/

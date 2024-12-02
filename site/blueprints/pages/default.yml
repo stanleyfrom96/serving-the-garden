@@ -1,4 +1,4 @@
-title: Default Page
+title: Default
 
 columns:
   main:
@@ -8,8 +8,28 @@ columns:
         type: fields
         fields:
           text:
-            type: textarea
-            size: huge
+            type: layout
+            fieldsets:
+              - heading
+              - text
+              - accordion
+              - image
+              - list
+              - gallery
+              - button
+              - spacer
+              - video
+            settings:
+              fields:
+                class:
+                  type: text
+                  width: 1/2
+                id:
+                  type: text
+                  width: 1/2
+                image:
+                  label: Background image
+                  type: files
   sidebar:
     width: 1/3
     sections:
@@ -18,4 +38,3 @@ columns:
         template: default
       files:
         type: files
-
