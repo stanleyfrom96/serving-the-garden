@@ -1,20 +1,6 @@
-<?php
+<?php snippet('header') ?>
 
-// main menu items
-$items = $pages->listed();
-
-// only show the menu if items are available
-if($items->isNotEmpty()):
-
-?>
-<nav>
-  <ul>
-    <?php foreach($items as $item): ?>
-    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
-    <?php endforeach ?>
-  </ul>
-</nav>
-<?php endif ?>
+<h1>The Garden 𖡼.𖤣𖥧𖡼.𖤣𖥧</h1>
 
 <?php
 
@@ -46,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
 
 ?>
 
-<h1>Plant a Seed</h1>
+<h2>Plant a Seed</h2>
 
 <!-- File upload form -->
 <form method="POST" enctype="multipart/form-data">
@@ -66,7 +52,7 @@ $uploadDir = 'assets/uploads/';
 $files = array_diff(scandir($uploadDir), ['.', '..']); // Exclude . and .. from the list
 
 if (empty($files)) {
-    echo '<p>No files uploaded yet.</p>';
+    echo '<p>Nothing is planted yet... :(</p>';
 } else {
     echo '<ul>';
     foreach ($files as $file) {
