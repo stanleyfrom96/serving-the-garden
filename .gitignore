@@ -48,3 +48,9 @@ Icon
 # ---------------
 
 /site/config/.license
+
+
+# Content
+# ---------------
+
+/content/*
