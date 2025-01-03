@@ -9,7 +9,7 @@ body {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  color: #706f6f;
+  color: red;
   -webkit-font-smoothing: antialiased;
 }
 
