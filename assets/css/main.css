@@ -160,6 +160,7 @@ header {
   right: 0;
   overflow: hidden;
   z-index: 0;
+  font-size: 15px;
 }
 
 .file-item {
@@ -185,17 +186,8 @@ header {
   margin: 0;
 }
 
-.file-item.small {
-  width: 100px;
-}
-
-.file-item.large {
-  width: 300px;
-}
-
 .file-item img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100px;
 }
 
 .file-item audio {
@@ -205,6 +197,6 @@ header {
 .file-item pre {
   width: 100%;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  text-overflow: wrap;
+  white-space: wrap;
 }

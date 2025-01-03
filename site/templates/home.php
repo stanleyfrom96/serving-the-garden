@@ -126,6 +126,8 @@ if ($handle = opendir(kirby()->roots()->content() . '/uploads/')) {
             <?php elseif ($category === 'Text'): ?>
                 <pre class="file-text" ><?php echo htmlspecialchars(file_get_contents($filePath)); ?></pre>
             <?php endif; ?>
+            <!-- Enlarge Button -->
+            <button class="enlarge-btn" onclick="toggleSize(this)">🔍</button>
         </div>
     <?php endforeach; ?>
 </div>
