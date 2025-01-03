@@ -83,7 +83,10 @@ main {
 
 form {
   z-index: 1;
-  position: absolute;
+  position: relative;
+  margin-top: 10%;
+  margin-inline: auto;
+  width: 30rem;
 }
 
 header {
@@ -163,16 +166,20 @@ header {
   font-size: 15px;
 }
 
+form,
 .file-item {
-  position: absolute;
-  cursor: pointer;
-  transition: transform 0.1s ease-in-out;
   padding: 1rem;
   border: 1px solid blue;
   height: fit-content;
   border-radius: 1rem;
   background-color: white;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.28);
+}
+
+.file-item {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
 }
 
 .file-item p {
