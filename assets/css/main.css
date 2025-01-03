@@ -81,6 +81,11 @@ main {
   width: 60%;
 }
 
+form {
+  z-index: 1;
+  position: absolute;
+}
+
 header {
   position: fixed;
   width: 60%;
@@ -148,18 +153,29 @@ header {
 }
 
 .upload-container {
-  position: relative;
-  width: 100%;
-  height: 80vh; /* Adjust height to fit your layout */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   overflow: hidden;
+  z-index: 0;
 }
 
 .file-item {
   position: absolute;
   cursor: pointer;
   transition: transform 0.1s ease-in-out;
-  max-width: 300px;
-  max-height: 300px;
+  padding: 1rem;
+  border: 1px solid blue;
+  height: fit-content;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.28);
+}
+
+.file-item p {
+  margin: 0;
 }
 
 .file-item img,
@@ -171,12 +187,10 @@ header {
 
 .file-item.small {
   width: 100px;
-  height: 100px;
 }
 
 .file-item.large {
   width: 300px;
-  height: 300px;
 }
 
 .file-item img {
