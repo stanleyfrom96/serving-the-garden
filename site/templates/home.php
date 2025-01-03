@@ -2,6 +2,25 @@
 
 <h1>The Garden 𖡼.𖤣𖥧𖡼.𖤣𖥧</h1>
 
+<nav>
+    <ul>
+        <?php foreach ($site->children()->listed() as $item): ?>
+            <li>
+                <a href="<?= $item->url() ?>"><?= $item->title() ?></a>
+                <?php if ($item->hasChildren()): ?>
+                    <ul>
+                        <?php foreach ($item->children()->listed() as $subitem): ?>
+                            <li>
+                                <a href="<?= $subitem->url() ?>"><?= $subitem->title() ?></a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</nav>
+
 <?php
 
 // Check if a file was uploaded
