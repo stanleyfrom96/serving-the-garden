@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
 
 ?>
 
-<h2>Plant a Seed</h2>
+<h2>Plant a Seed 1</h2>
 
 <!-- File upload form -->
 <form method="POST" enctype="multipart/form-data">
