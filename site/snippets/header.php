@@ -23,6 +23,7 @@
                 <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
                 <?php endforeach ?>
             </ul>
+          
             </nav>
             <?php endif ?>
         </header>
