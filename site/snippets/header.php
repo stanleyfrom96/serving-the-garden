@@ -9,6 +9,7 @@
     </head>
     <body>
         <header>
+
             <?php
             // main menu items
             $items = $pages->listed();

@@ -5,31 +5,47 @@ body {
   font-size: 20px;
   gap: 0px;
   background-color: #fff;
-  /* background-image: url(img/5.png);*/
+  /* background-image: url(img/
+  width:20px;5.png);*/
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   color: black;
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.5px;
+  padding:20px;
+}
+
+
+.grid{
+background-color: none;
+
+
 
 }
 
+img{
+  max-width:250px;
+}
 /*text*/
 h1 {
-  text-align: center;
+  /*text-align: center;*/
   font-family: sans-serif;
   font-size: 40px;
   padding: 0;
   padding-bottom: 0px;
   margin: 0;
-  margin-top: 15px;
+  margin-top: -10px;
+  margin-bottom:100px;
   font-weight: bold;
   letter-spacing: -2;
   color: #101010;
   background: none;
   vertical-align: text-top;
   width: 100%;
+
+
+  
 }
 
 h2 {
@@ -56,12 +72,17 @@ hr {
 p {
   display: inline-block;
   padding: 0;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: none;
+  width:80%;
+  padding-bottom:20px;
+    border-bottom: 2px dotted black;
+
 }
 
 a {
-  color: deeppink;
+  color: black;
   text-decoration: none;
   border-bottom: 1px dotted currentColor;
 }
@@ -85,7 +106,7 @@ main {
 }
 
 form {
-  z-index: 1;
+  z-index: 4;
   /*position: relative;*/
   position: absolute;
   /*margin-top: 10%;*/
@@ -94,27 +115,36 @@ form {
   width: 30rem;
   background-color: white;
   right:20px;
-  top:20px;
+  bottom:20px;
 
  
+}
+
+figure{
+  margin-left:0;
 }
 
 header {
   position: fixed;
   z-index:2;
-  width: 60%;
+ /* width: 60%;*/
+ width:auto;
   margin: auto;
-  background: none;
+  background: white;
+  border: 2px solid black;
+  border-radius: 20%;
   height: auto;
-  top: 0;
+  right:20px;
+  top: 20px;
   justify-content: center;
-  left: 50%;
-  transform: translate(-50%, 0);
+  padding-right:20px;
+  /*left: 50%;
+  transform: translate(-50%, 0);*/
   text-align: left;
-  mix-blend-mode: difference;
+  /*mix-blend-mode: difference;
   moz-mix-blend-mode: difference;
   webkit-mix-blend-mode: difference;
-  o-mix-blend-mode: difference;
+  o-mix-blend-mode: difference;*/
 }
 .icons {
   position: fixed;
@@ -126,10 +156,14 @@ header {
 .seed {
   width: 100px;
 }
-.img {
+.img 
+width:20px;{
   margin: 0;
   padding: 0;
+  max-width: 10px;
 }
+
+
 
 .illustrations {
   margin: 0;
@@ -146,7 +180,6 @@ header {
   .content {
     margin: auto;
     margin-top: 200px;
-    background: none;
     width: 100%;
   }
 
@@ -177,6 +210,10 @@ header {
  /* font-size: 15px;*/
 }
 
+.upload-container p{
+border-bottom: none;
+}
+
 form,
 .file-item {
   padding: 1rem;
@@ -198,13 +235,15 @@ form,
 }
 
 .file-item img,
+width:20px;
 .file-item audio,
 .file-item pre {
   display: block;
   margin: 0;
 }
 
-.file-item img {
+.file-item img 
+width:20px;{
   width: 100px;
   background-color: red;
 }
