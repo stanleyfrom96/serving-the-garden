@@ -1,6 +1,6 @@
 body {
   /*  font-family: courier;*/
-  font-family: serif;
+  font-family: sans-serif;
   font-weight: 100;
   font-size: 25px;
   gap: 0px;
@@ -9,7 +9,7 @@ body {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  color: blue;
+  color: black;
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.5px;
 
@@ -172,11 +172,15 @@ header {
 form,
 .file-item {
   padding: 1rem;
-  border: 1px solid blue;
+  border: 2px solid black;
   height: fit-content;
-  border-radius: 1rem;
+  /*border-radius: 1rem;*/
   background-color: white;
-  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.28);
+ /* box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.28);*/
+}
+
+form{
+  background-color: white;
 }
 
 .file-item {
@@ -198,6 +202,7 @@ form,
 
 .file-item img {
   width: 100px;
+  background-color: red;
 }
 
 .file-item audio {
