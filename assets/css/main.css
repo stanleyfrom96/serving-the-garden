@@ -4,13 +4,13 @@ body {
   font-weight: 100;
   font-size: 20px;
   gap: 0px;
-  background-color: #fff;
+  background-color: #a37f48;
   /* background-image: url(img/
   width:20px;5.png);*/
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  color: black;
+  color: #206106;
   -webkit-font-smoothing: antialiased;
   letter-spacing: -0.5px;
   padding:20px;
@@ -39,7 +39,7 @@ h1 {
   margin-bottom:100px;
   font-weight: bold;
   letter-spacing: -2;
-  color: #101010;
+  color:#206106;
   background: none;
   vertical-align: text-top;
   width: 100%;
@@ -217,10 +217,12 @@ border-bottom: none;
 form,
 .file-item {
   padding: 1rem;
-  border: 2px solid black;
+  border: 1px solid #666b64;
   height: fit-content;
   /*border-radius: 1rem;*/
-  background-color: white;
+  background-color: #7d857a;
+  box-shadow: 5px 5px 5px lightblue;
+  color: #206106;
  /* box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.28);*/
 }
 
@@ -228,6 +230,7 @@ form,
   position: absolute;
   cursor: pointer;
   transition: transform 0.1s ease-in-out;
+  border-radius: 25px;
 }
 
 .file-item p {
